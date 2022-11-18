@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" type="text/css" href="quanliSinhVien.css">
+</head>
+<body onload="temPorAry()">
+<div class="form-student">
+  <h1>Thông tin sinh viên</h1>
+  <label>Họ và tên</label>
+  <input type="text" id="fullName"/>
+  <input type="text" id="index" hidden/>
+  <br>
+  <label>Địa chỉ email</label>
+  <input type="text" id="email"/>
+  <br>
+  <label>Số điện thoại</label>
+  <input type="text" id="phone"/>
+  <br>
+  <label>Địa chỉ</label>
+  <input type="text" id="address"/>
+  <br>
+  <label>Giới tính</label>
+  <select name="gender" id="gender">
+    <option value="1">Nam</option>
+    <option value="2">Nữ</option>
+  </select>
+  <br>
+  <label></label>
+  <br>
+  <button onclick="saveStudent()">Lưu lại</button>
+  <button onclick="changeStudent()">Thay đổi</button>
+</div>
+<div class="list-student" id="list-student">
+  <h1>Danh sách sinh viên</h1>
+  <table id="add-students" width="1000" border="1" cellpadding="0" cellspacing="0">
+  </table>
+</div>
+<script src="quanliSinhvien.js"></script>
+</body>
+</html>
